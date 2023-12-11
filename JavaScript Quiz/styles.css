@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(98, 247, 247);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Start Div */
+.startDiv{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+button:active{
+    opacity: 0.6;
+}
+
+/* Start Button */
+.startBtn {
+    font-size: 15px;
+    color: white;
+    background-color: rgb(2, 135, 135);
+    padding: 20px;
+    width: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: bn53bounce 4s infinite;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+  
+@keyframes bn53bounce {
+    5%,
+    50% {
+      transform: scale(1);
+    }
+  
+    10% {
+      transform: scale(1);
+    }
+  
+    15% {
+      transform: scale(1);
+    }
+  
+    20% {
+      transform: scale(1) rotate(-5deg);
+    }
+  
+    25% {
+      transform: scale(1) rotate(5deg);
+    }
+  
+    30% {
+      transform: scale(1) rotate(-3deg);
+    }
+  
+    35% {
+      transform: scale(1) rotate(2deg);
+    }
+  
+    40% {
+      transform: scale(1) rotate(0);
+    }
+}
+
+/* display Container */
+.displayContainer{
+    background-color: white;
+    text-align: center;
+    padding: 100px 30px;
+    margin: 200px auto;
+    width: 80%;
+    max-width: 1000px;
+}
+
+/* Previous Btn and Next Btn */
+.btn{
+    margin-top: 80px;
+    background-color: brown;
+}
+
+.previousBtn{
+    float: left;
+}
+
+.nextBtn{
+    float: right;
+}
+
+.previousBtn, .nextBtn{
+    font-size: 15px;
+    background-color: rgb(2, 106, 106);
+    border-radius: 3px;
+}
+
+/* Previous and next Button Design */
+.btn41-43 {
+    padding: 10px 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+.btn-41 {
+    border: 2px solid rgb(2, 106, 106);
+    z-index: 1;
+    color: black;
+}
+  
+.btn-41:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    background: rgb(2, 106, 106);
+    transition: all 0.3s ease;
+}
+  
+.btn-41:hover {
+    color: rgb(0, 0, 0);
+}
+  
+.btn-41:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+  
+.btn-41:active {
+    top: 2px;
+}
+
+/* result div */
+.result{
+    text-align: center;
+}
+
+.correctResult{
+    background-color: green;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.wrongResult{
+    background-color: red;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.correctResult, .wrongResult{
+    font-size: 15px;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* hidden display */
+.hidden{
+    display: none;
+}
+
+/* Option btn */
+.optionBtn{
+    background-color: gray;
+    color: white;
+    padding: 8px;
+    margin: 30px 20px 0 0;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.optionBtn:active{
+    background-color: rgb(2, 106, 106);
+}
